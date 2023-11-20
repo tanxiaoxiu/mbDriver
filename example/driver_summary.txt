@@ -1,0 +1,11 @@
+Driver	Score	Group
+Erysipelotrichaceae	609277622744331136	group1
+Ruminococcaceae	215913495370484256	group1
+Bacteroidaceae	64090240787133688	group1
+Sutterellaceae	17501938281246148	group1
+Desulfovibrionaceae	17191111413481574	group1
+Sutterellaceae	358466628296968576	group2
+Peptostreptococcaceae	39901345378414088	group2
+Porphyromonadaceae	38370355498241832	group2
+Ruminococcaceae	24755358613613968	group2
+Rikenellaceae	21584743889206844	group2

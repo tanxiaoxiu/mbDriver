@@ -1,0 +1,11 @@
+rownames(D_square)	V1
+Sutterellaceae	358466628296968576
+Peptostreptococcaceae	39901345378414088
+Porphyromonadaceae	38370355498241832
+Ruminococcaceae	24755358613613968
+Rikenellaceae	21584743889206844
+Bacteroidaceae	21125309665957248
+Akkermansiaceae	20127418090067656
+Lachnospiraceae	8502611094306280
+Erysipelotrichaceae	6047409827542342
+Desulfovibrionaceae	1099148577916756

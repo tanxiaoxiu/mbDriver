@@ -1,0 +1,6 @@
+Driver	Score	Group
+Sutterellaceae	358466628296968576	group2
+Peptostreptococcaceae	39901345378414088	group2
+Porphyromonadaceae	38370355498241832	group2
+Ruminococcaceae	24755358613613968	group2
+Rikenellaceae	21584743889206844	group2
