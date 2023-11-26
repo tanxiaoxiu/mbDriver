@@ -2,7 +2,7 @@
 mbDriver: identifying driver microbes in microbial communities based on time-series microbiome data
 
 ## Framework of mbDriver
-![](https://github.com/tanxiaoxiu/PGNneo/blob/master/pipeline.png)
+![](https://github.com/tanxiaoxiu/mbDriver/blob/master/Framework.png)
 
 ## a. Data preprocessing
 Observed temporal abundance data are denoised and smoothed, using smoothing splines based on the negative binomial distribution, to obtain estimates of the species abundance curves and their derivatives.
