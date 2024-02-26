@@ -3,9 +3,12 @@ adjustdata <- function(data) {
   data<-cbind(rownames(data),data)
 }
 
+
 #####RMSE
-#########t=8,13,18,25
-setwd("~/mbDriver/simulation/parameter_estimation/other_methods/t25/theta1")
+timepoint <- "t8"  # "t8", "t13", "t18", "t25"
+path <- paste0("~/mbDriver/simulation/parameter_estimation/other_methods/", timepoint, "/theta1")
+setwd(path)
+
 load("A0_tables.Rdata")
 load("r0_tables.Rdata")
 load("MLRR_list.Rdata")

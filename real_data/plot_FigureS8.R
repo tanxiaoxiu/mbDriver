@@ -2,7 +2,7 @@ library(tidyverse)
 library(readxl)
 library(ggpubr)
 library(ggplot2)
-setwd("~/mbDriver/real_data_new/Fiber_diet")
+setwd("~/mbDriver/real_data/Fiber_diet")
 
 adjustdata <- function(data) {
   data<-cbind(rownames(data),data)

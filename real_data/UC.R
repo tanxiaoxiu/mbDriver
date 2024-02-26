@@ -61,7 +61,7 @@ adjustdata <- function(data) {
   data<-cbind(rownames(data),data)
 }
 
-setwd("~/mbDriver/real_data_new/UC")
+setwd("~/mbDriver/real_data/UC")
 
 #Input data
 abundance <- read.delim("absolute_abundance.txt",row.names = 1, sep = '\t', check.names = FALSE)

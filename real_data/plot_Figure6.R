@@ -3,7 +3,7 @@ library(readxl)
 library(ggpubr)
 library(pheatmap)
 library(ggplot2)
-setwd("~/mbDriver/real_data_new/Fiber_diet")
+setwd("~/mbDriver/real_data/Fiber_diet")
 
 ###Figure6B
 MAX_N_OTU =10

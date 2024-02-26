@@ -1,5 +1,3 @@
-setwd("~/mbDriver/simulation/parameter_estimation/dense/t8/theta1")
-
 library(sampling)
 library(tidyverse)
 library(deSolve)
@@ -10,7 +8,12 @@ library(glmnet)
 library(Rfast)
 library(mgcv)
 
-theta0 = 1 #theta0=1,3,5
+timepoint = "t8"   #"t8", "t13", "t18", "t25" 
+theta0 = 1        # 1, 3, 5 
+path <- paste0("~/mbDriver/simulation/parameter_estimation/dense/", timepoint, "/theta", theta0)
+setwd(path)
+
+
 p = 10 #p=10,15
 n = 10 #n=10,15
 
@@ -175,11 +178,22 @@ for (iter in 1:iterations){
     colnames(otu_NB) <- colnames(otu_time)
     
     #Sparse time
-    t_25 <-c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25")
-    t_18 <-c("1","2","3","4","5","6","7","8","9","10","11","13","15","17","20","21","23","25")
-    t_13 <-c("1","2","3","4","6","7","11","15","17","19","21","23","25") 
-    t_8 <- c("1","2","3","7","11","15","20","25")
-    mi = t_8 #mi=t_8,t_13,t_18,t_25
+    t25 <-c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25")
+    t18 <-c("1","2","3","4","5","6","7","8","9","10","11","13","15","17","20","21","23","25")
+    t13 <-c("1","2","3","4","6","7","11","15","17","19","21","23","25") 
+    t8 <- c("1","2","3","7","11","15","20","25")
+    if (timepoint == "t25") {
+      mi <- t25
+    } else if (timepoint == "t18") {
+      mi <- t18
+    } else if (timepoint == "t13") {
+      mi <- t13
+    } else if (timepoint == "t8") {
+      mi <- t8
+    } else {
+      mi <- NULL
+    }
+    
     subject_sparse <- otu_NB[otu_NB$OTUtime %in% mi, ]
     subject_sparse_t <- subject_sparse[,-1]
     count <- rbind(count,subject_sparse_t)

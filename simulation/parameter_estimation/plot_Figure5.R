@@ -6,8 +6,8 @@ library(dplyr)
 library(tibble)
 library(ggplot2)
 
-##plot
-###Interaction,growth,time
+##plot Interaction,growth,time
+###Figure5A
 setwd("~/mbDriver/simulation/parameter_estimation/other_methods")
 main_result_baseDir = "~/mbDriver/simulation/parameter_estimation/other_methods"
 main_result_timer= c("t8","t13","t18","t25")
@@ -69,7 +69,25 @@ p1 <-  plot1 + theme(legend.spacing.y = unit(0.5, 'cm')) + guides(fill = guide_l
 ggsave(filename="Figure5A.png",plot=p1,device="png",dpi=600,units="in",width=12,height= 8)
 
 
-#Figure5B
+###Figure5B
+##plot growth
+g <- ggplot(plot_summary, aes(time))
+plot2 <- g + geom_col(aes(fill = Method,y= RMSE_r), position = position_dodge())+
+  scale_fill_manual(values = c("#df7676","#79add2", "#13679e", "#3c5587","#f09b81"))+
+  xlab(expression(italic(m)))+
+  ylab("Relative RMSE")+
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5),text = element_text(size=30))+
+  theme(panel.grid.major=element_line(colour=NA),
+        panel.background = element_rect(fill = "transparent",colour = NA),
+        plot.background = element_rect(fill = "transparent",colour = NA),
+        panel.grid.minor = element_blank())
+
+p2 <-  plot2 + theme(legend.spacing.y = unit(0.5, 'cm')) + guides(fill = guide_legend(byrow = TRUE))
+ggsave(filename="Figure5B.png",plot=p2,device="png",dpi=600,units="in",width=12,height= 8)
+
+
+###Figure5C
 setwd("~/mbDriver/simulation/parameter_estimation/other_methods")
 main_result_baseDir = "~/mbDriver/simulation/parameter_estimation/other_methods"
 main_result_timer= c("t8","t13","t18","t25")
@@ -120,7 +138,7 @@ plot_summary$time <- log(plot_summary$time + 1)
 
 setwd("~/mbDriver/simulation/parameter_estimation/")
 g <- ggplot(plot_summary, aes(group))
-plot2 <- g + geom_col(aes(fill = Method,y= time), position = position_dodge())+
+plot3 <- g + geom_col(aes(fill = Method,y= time), position = position_dodge())+
   scale_fill_manual(values = c("#df7676","#79add2", "#13679e", "#3c5587","#f09b81"))+
   xlab(expression(italic(m)))+
   ylab("log(Seconds + 1)")+
@@ -132,5 +150,7 @@ plot2 <- g + geom_col(aes(fill = Method,y= time), position = position_dodge())+
         plot.background = element_rect(fill = "transparent",colour = NA),
         panel.grid.minor = element_blank())
 
-p2 <-  plot2 + theme(legend.spacing.y = unit(0.5, 'cm')) + guides(fill = guide_legend(byrow = TRUE))
-ggsave(filename="Figure5B.png",plot=p2,device="png",dpi=600,units="in",width=12,height=8)
+p3 <-  plot3 + theme(legend.spacing.y = unit(0.5, 'cm')) + guides(fill = guide_legend(byrow = TRUE))
+ggsave(filename="Figure5C.png",plot=p3,device="png",dpi=600,units="in",width=12,height=8)
+
+

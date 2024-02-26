@@ -98,7 +98,7 @@ plot3 <- g + geom_col(aes(fill = Group,y= RMSE_A), position = position_dodge())+
         plot.background = element_rect(fill = "transparent",colour = NA),
         panel.grid.minor = element_blank())
 plot_FigureS2A <- plot_grid(plot1,plot2,plot3, ncol=3, nrow=1)
-#ggsave(filename="plot_FigureS2A.png",plot=plot_FigureS2A,device="png",dpi=600,units="in",width=18,height=6)
+ggsave(filename="plot_FigureS2A.png",plot=plot_FigureS2A,device="png",dpi=600,units="in",width=18,height=6)
 
 
 ###Figure S2B
@@ -187,4 +187,4 @@ plot6 <- g + geom_col(aes(fill = Group,y= RMSE_A), position = position_dodge())+
         plot.background = element_rect(fill = "transparent",colour = NA),
         panel.grid.minor = element_blank())
 plot_FigureS2B <- plot_grid(plot4,plot5,plot6, ncol=3, nrow=1)
-#ggsave(filename="plot_FigureS2B.png",plot=plot_FigureS2B,device="png",dpi=600,units="in",width=18,height=6)
+ggsave(filename="plot_FigureS2B.png",plot=plot_FigureS2B,device="png",dpi=600,units="in",width=18,height=6)

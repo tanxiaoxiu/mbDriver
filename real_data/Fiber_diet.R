@@ -61,7 +61,7 @@ adjustdata <- function(data) {
   data<-cbind(rownames(data),data)
 }
 
-setwd("~/mbDriver/real_data_new/Fiber_diet")
+setwd("~/mbDriver/real_data/Fiber_diet")
 
 #Input data
 abundance <- read.delim("absolute_abundance.txt", row.names = 1, sep = '\t', check.names = FALSE)

@@ -1,4 +1,4 @@
-setwd("~/mbDriver/real_data_new/UC")
+setwd("~/mbDriver/real_data/UC")
 library(pheatmap)
 library(magrittr)
 library(dplyr)
