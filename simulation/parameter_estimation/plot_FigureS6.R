@@ -1,6 +1,6 @@
 library(tidyr)
 library(ggplot2)
-setwd("~/mbDriver/simulation/trajectory/theta3")
+setwd("~/mbDriver/simulation/parameter_estimation/trajectory/theta3")
 
 ###p10
 ##Relative RMSE
