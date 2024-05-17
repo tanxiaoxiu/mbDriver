@@ -37,18 +37,16 @@ f_deriv <- function(X){
   return(Y)
 }
 
-###calculate Driver Score
+###calculate D3 Score
 Driver_Score <- function(A,r){
   x_star <- -solve(A) %*% r
-  x_star[x_star < 0] <- 0
   p <- length(r)
   D_square <- as.data.frame(matrix(nrow=p,ncol=1))
   for (i in 1:p){
     Ai <- A
-    Ai[i,-i] <- 0
+    Ai[-i,i] <- 0
     ri <- r
     z_star <- -solve(Ai) %*% ri
-    z_star[z_star < 0] <- 0
     di <- x_star - z_star
     D_square[i,] <- sum(as.numeric(di*di))
   }

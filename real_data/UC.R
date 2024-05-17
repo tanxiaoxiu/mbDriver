@@ -36,17 +36,16 @@ f_deriv <- function(X){
 }
 
 ###calculate Driver Score
+###calculate D3 Score
 Driver_Score <- function(A,r){
   x_star <- -solve(A) %*% r
-  x_star[x_star < 0] <- 0
   p <- length(r)
   D_square <- as.data.frame(matrix(nrow=p,ncol=1))
   for (i in 1:p){
     Ai <- A
-    Ai[i,-i] <- 0
+    Ai[-i,i] <- 0
     ri <- r
     z_star <- -solve(Ai) %*% ri
-    z_star[z_star < 0] <- 0
     di <- x_star - z_star
     D_square[i,] <- sum(as.numeric(di*di))
   }
@@ -71,7 +70,7 @@ metadata <- read.delim("metadata.txt", row.names = 1, sep = '\t', check.names = 
 data_abundance <- rbind(abundance,Total=colSums(abundance))
 data_abundance_sort <- data_abundance[,order(-as.numeric(data_abundance["Total",]))]
 data_UC <- merge(metadata,data_abundance_sort,by = 'row.names', all = F)
-write.table(data_UC,file = "data_UC.txt",row.names = F,col.names = T, sep = "\t",quote = F)
+#write.table(data_UC,file = "data_UC.txt",row.names = F,col.names = T, sep = "\t",quote = F)
 
 p = 10 
 n1 = 5
@@ -108,7 +107,7 @@ X <- as.matrix(F_d)
 Y <- as.matrix(F_F_dt)
 pe_r <- as.data.frame(matrix(nrow=(p+1)))
 for (i in 1:p){
-  set.seed(12345)
+  set.seed(1)
   Yr <- as.matrix(Y[,i])
   ridge_fit <- glmnet(X, Yr,family = "gaussian",alpha=0)
   r_cv_fit <- cv.glmnet(X, Yr,family = "gaussian",type.measure="mse",alpha=0)
@@ -136,6 +135,7 @@ colnames(group1_driver) <- c("Driver","Score")
 group1_driver$Group <- group1
 filename_driver <- paste0(group1,"_driver.txt")
 write.table(group1_driver,file = filename_driver,row.names = F,col.names = T, sep = "\t",quote = F)
+
 
 #####################H2 group
 ###Data preprocessing
@@ -165,7 +165,7 @@ X <- as.matrix(F_d)
 Y <- as.matrix(F_F_dt)
 pe_r <- as.data.frame(matrix(nrow=(p+1)))
 for (i in 1:p){
-  set.seed(12345)
+  set.seed(1)
   Yr <- as.matrix(Y[,i])
   ridge_fit <- glmnet(X, Yr,family = "gaussian",alpha=0)
   r_cv_fit <- cv.glmnet(X, Yr,family = "gaussian",type.measure="mse",alpha=0)
@@ -225,7 +225,7 @@ X <- as.matrix(F_d)
 Y <- as.matrix(F_F_dt)
 pe_r <- as.data.frame(matrix(nrow=(p+1)))
 for (i in 1:p){
-  set.seed(12345)
+  set.seed(2)
   Yr <- as.matrix(Y[,i])
   ridge_fit <- glmnet(X, Yr,family = "gaussian",alpha=0)
   r_cv_fit <- cv.glmnet(X, Yr,family = "gaussian",type.measure="mse",alpha=0)
@@ -282,7 +282,7 @@ X <- as.matrix(F_d)
 Y <- as.matrix(F_F_dt)
 pe_r <- as.data.frame(matrix(nrow=(p+1)))
 for (i in 1:p){
-  set.seed(12345)
+  set.seed(2)
   Yr <- as.matrix(Y[,i])
   ridge_fit <- glmnet(X, Yr,family = "gaussian",alpha=0)
   r_cv_fit <- cv.glmnet(X, Yr,family = "gaussian",type.measure="mse",alpha=0)
@@ -314,3 +314,19 @@ write.table(group4_driver,file = filename_driver,row.names = F,col.names = T, se
 ###Summary
 summary <- rbind(group1_driver,group2_driver,group3_driver,group4_driver)
 write.table(summary,file ="UC_driver_summary.txt",row.names = F,col.names = T, sep = "\t",quote = F)
+
+###Figure8B
+MAX_N_OTU =10
+l_tb <- read.delim("UC_driver_summary.txt",  sep = '\t', check.names = FALSE)
+l_tb %>% pivot_wider(names_from = "Group" ,values_from = "Score")
+
+w_tb <- l_tb %>% 
+  pivot_wider(id_cols = "Driver", 
+              names_from = "Group", 
+              values_from = "Score",
+              values_fill=0) %>% 
+  mutate(across(-Driver, function(x) log10(x + 1))) %>%
+  column_to_rownames("Driver")
+
+p1 <- pheatmap(w_tb, cluster_cols = F,angle_col=0,fontsize=14)
+ggsave(filename="Figure8B.png",plot=p1,device="png",dpi=600,units="in",width=6,height=7)

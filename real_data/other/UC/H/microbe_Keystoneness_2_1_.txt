@@ -1,0 +1,11 @@
+StateID	microbe	keystoneness
+9	Enterobacteriaceae	943101.295869114
+2	Bacteroidaceae	932173.956952242
+6	Porphyromonadaceae	287145.045403887
+4	Lachnospiraceae	244807.093157041
+3	Akkermansiaceae	214131.741201533
+5	Sutterellaceae	201431.246682336
+7	Prevotellaceae	170784.708126928
+8	Ruminococcaceae	76985.3940692649
+10	Desulfovibrionaceae	53636.1834958454
+1	Acidaminococcaceae	NA

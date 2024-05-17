@@ -3,6 +3,7 @@ library(readxl)
 library(ggpubr)
 library(pheatmap)
 library(ggplot2)
+library(ggprism)
 setwd("~/mbDriver/real_data/Fiber_diet")
 
 ###Figure6B
@@ -51,10 +52,9 @@ metabolite_species[,13:22] <- log(metabolite_species[,13:22] +1)
 metabolite_species$Group <- gsub("Control", "Con", metabolite_species$Group)
 metabolite_species$Group <- gsub("Resistant starch", "Rs", metabolite_species$Group)
 metabolite_species$Group <- gsub("Inulin", "In", metabolite_species$Group)
-
-
+metabolite_species$Group <- factor(metabolite_species$Group, levels = c("Con", "Rs", "In"))
 #Faecalibaculum
-color=c("#1597A5","#FFC24B","#FEB3AE")
+color=c("#1597A5","#FEB3AE","#FFC24B")
 p2 <- ggplot(metabolite_species,aes(x=Group,y=Faecalibaculum))+
   stat_boxplot(geom = "errorbar", width=0.1,size=0.8)+
   geom_boxplot(aes(fill=Group), 
@@ -66,8 +66,8 @@ p2 <- ggplot(metabolite_species,aes(x=Group,y=Faecalibaculum))+
   ggtitle('Faecalibaculum') +
   scale_fill_manual(values=color)+
   geom_jitter(width = 0.2)+
-  geom_signif(comparisons = list(c("Con","In"),
-                                 c("Con","Rs")),
+  geom_signif(comparisons = list(c("Con","Rs"),
+                                 c("Con","In")),
               map_signif_level = T, 
               step_increase = 0.08,
               test = t.test, 
@@ -97,8 +97,8 @@ p3 <- ggplot(metabolite_species,aes(x=Group,y=Butyrate))+
   ggtitle('Butyrate') +
   scale_fill_manual(values=color)+
   geom_jitter(width = 0.2)+
-  geom_signif(comparisons = list(c("Con","In"),
-                                 c("Con","Rs")),
+  geom_signif(comparisons = list(c("Con","Rs"),
+                                 c("Con","In")),
               map_signif_level = T, 
               step_increase = 0.08,
               test = t.test, 

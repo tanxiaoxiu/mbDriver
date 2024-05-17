@@ -19,6 +19,8 @@ colnames(Group) <- c("ID","Group")
 Group$Group <- gsub("Control", "Con", Group$Group)
 Group$Group <- gsub("Resistant starch", "Rs", Group$Group)
 Group$Group <- gsub("Inulin", "In", Group$Group)
+
+Group$Group <- factor(Group$Group, levels = c("Con", "Rs", "In"))
 #write.table(Group,file ="Group.txt",row.names = F,col.names = T, sep = "\t",quote = F)
 otu <- data_fiber_diet[,-c(2:5)]
 row.names(otu) <- otu[,1]
@@ -47,7 +49,7 @@ df2 <- merge(index,groups,by = 'samples')
 
 ###Figure_S7A
 #Shannon
-color=c("#1597A5","#FFC24B","#FEB3AE")
+color=c("#1597A5","#FEB3AE","#FFC24B")
 p1 <- ggplot(df2,aes(x=Group,y=Shannon))+
   stat_boxplot(geom = "errorbar", width=0.1,size=0.8)+
   geom_boxplot(aes(fill=Group), 
@@ -78,7 +80,7 @@ ggsave(filename="FigureS7A.png",plot=p1,device="png",dpi=600,units="in",width=6,
 
 ###Figure_S7B
 #Simpson
-color=c("#1597A5","#FFC24B","#FEB3AE")
+color=c("#1597A5","#FEB3AE","#FFC24B")
 p2 <- ggplot(df2,aes(x=Group,y=Simpson))+
   stat_boxplot(geom = "errorbar", width=0.1,size=0.8)+
   geom_boxplot(aes(fill=Group), 
@@ -120,7 +122,7 @@ pcoa_result <- merge(pcoa_points, Group, by = 'ID', all.x = TRUE)
 #PERMANOVA
 dune.div <- adonis2(OTU ~ Group, data = Group, permutations = 999, method="bray")
 dune_adonis2_2 <- paste0("R²=",round(dune.div$R2,2), ", P-value=", dune.div$`Pr(>F)`)
-color=c("#1597A5","#FFC24B","#FEB3AE")
+color=c("#1597A5","#FEB3AE","#FFC24B")
 p3 <- ggplot(pcoa_result,aes(x=PCoA1,y=PCoA2,
                              color=Group,shape=Group))+
   theme_bw()+
@@ -138,7 +140,7 @@ p3 <- ggplot(pcoa_result,aes(x=PCoA1,y=PCoA2,
                alpha=0.2,
                show.legend = T)+
   scale_color_manual(values = color) +
-  scale_fill_manual(values = c("#1597A5","#FFC24B","#FEB3AE"))+
+  scale_fill_manual(values = c("#1597A5","#FEB3AE","#FFC24B"))+
   theme(axis.title.x=element_text(size=14),
         axis.title.y=element_text(size=14,angle=90),
         axis.text.y=element_text(size=12),

@@ -35,13 +35,13 @@ metabolite_species <- merge(metabolite_group, species_top10, by = "SampleID", al
 metabolite_species_Rs <- metabolite_species[metabolite_species$Group == "Resistant starch", ]
 
 Driver_Rs <- metabolite_species_Rs[,c("Time","Total","Acetate","Propionate","Butyrate","Iso-butyrate","Iso-valerate","Valerate",
-                                      "Parabacteroides-goldsteinii","Parasutterella",
-                                      "Faecalibaculum","Bacteroides-acidifaciens","Lachnospiraceae",
+                                      "Parabacteroides-goldsteinii","Bacteroides-acidifaciens","Parasutterella",
+                                      "Faecalibaculum","Lachnospiraceae",
                                       "Subject")]
 
 colnames(Driver_Rs) <- c("Time","Total","Acetate","Propionate","Butyrate","Iso_butyrate","Iso_valerate","Valerate",
-                         "P.goldsteinii","Parasutterella",
-                         "Faecalibaculum","B.acidifaciens","Lachnospiraceae",
+                         "P.goldsteinii","B.acidifaciens","Parasutterella",
+                         "Faecalibaculum","Lachnospiraceae",
                          "Subject")
 
 
@@ -243,7 +243,7 @@ p1 <- p1 + scale_color_manual(
 )
 p1 <- p1 + geom_hline(yintercept = -log10(0.05), linetype = "dashed", color = "grey")
 p1 <- p1 + geom_vline(xintercept = 0, linetype = "dashed", color = "grey")
-ggsave(filename = "Figure7A.png", plot=p1, width=9, height = 6, dpi=600)
+ggsave(filename = "Figure7A.png", plot=p1, width=8, height = 6, dpi=600)
 
 ###Figure7B
 ###In group

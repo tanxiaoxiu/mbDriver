@@ -3,6 +3,7 @@ library(MASS)
 library(glmnet)
 library(Rfast)
 library(mgcv)
+library(tidyverse)
 
 ###calculate f
 f <- function(X){ 
@@ -38,15 +39,13 @@ f_deriv <- function(X){
 ###calculate D3 Score
 Driver_Score <- function(A,r){
   x_star <- -solve(A) %*% r
-  x_star[x_star < 0] <- 0
   p <- length(r)
   D_square <- as.data.frame(matrix(nrow=p,ncol=1))
   for (i in 1:p){
     Ai <- A
-    Ai[i,-i] <- 0
+    Ai[-i,i] <- 0
     ri <- r
     z_star <- -solve(Ai) %*% ri
-    z_star[z_star < 0] <- 0
     di <- x_star - z_star
     D_square[i,] <- sum(as.numeric(di*di))
   }
@@ -182,7 +181,7 @@ X <- as.matrix(F_In)
 Y <- as.matrix(F_F_dt_In)
 pe_r <- as.data.frame(matrix(nrow=(p+1)))
 for (i in 1:p){
-  set.seed(54321)
+  set.seed(12)
   Yr <- as.matrix(Y[,i])
   ridge_fit <- glmnet(X, Yr,family = "gaussian",alpha=0)
   r_cv_fit <- cv.glmnet(X, Yr,family = "gaussian",type.measure="mse",alpha=0)
@@ -310,11 +309,6 @@ Case <-Reduce(cbind,list(otu_cor_bj,otu_cor_sh,otu_cor_hn,otu_cor_gd))
 colnames(Case) <- paste0("Sample",seq(1,ncol(Case)))
 Case <- Case[-1,]
 Case <- adjustdata(Case)
-
-#write.table(F_Rs,file ="F_Rs.txt",row.names = F,col.names = T, sep = "\t",quote = F)
-#write.table(F_dt_Rs,file ="F_dt_Rs.txt",row.names = F,col.names = T, sep = "\t",quote = F)
-#write.table(F_F_dt_Rs,file ="F_F_dt_Rs.txt",row.names = F,col.names = T, sep = "\t",quote = F)
-#write.table(Case,file ="Case_Rs.txt",row.names = F,col.names = T, sep = "\t",quote = F)
 
 ###Parameter estimation
 X <- as.matrix(F_Rs)
@@ -450,17 +444,12 @@ colnames(Con) <- paste0("Sample",seq(1,ncol(Con)))
 Con <- Con[-1,]
 Con <- adjustdata(Con)
 
-#write.table(F_Con,file ="F_Con.txt",row.names = F,col.names = T, sep = "\t",quote = F)
-#write.table(F_dt_Con,file ="F_dt_Con.txt",row.names = F,col.names = T, sep = "\t",quote = F)
-#write.table(F_F_dt_Con,file ="F_F_dt_Con.txt",row.names = F,col.names = T, sep = "\t",quote = F)
-#write.table(Con,file ="Con.txt",row.names = F,col.names = T, sep = "\t",quote = F)
-
 ###Parameter estimation
 X <- as.matrix(F_Con)
 Y <- as.matrix(F_F_dt_Con)
 pe_r <- as.data.frame(matrix(nrow=(p+1)))
 for (i in 1:p){
-  set.seed(12)
+  set.seed(1)
   Yr <- as.matrix(Y[,i])
   ridge_fit <- glmnet(X, Yr,family = "gaussian",alpha=0)
   r_cv_fit <- cv.glmnet(X, Yr,family = "gaussian",type.measure="mse",alpha=0)

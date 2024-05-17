@@ -1,0 +1,11 @@
+StateID	microbe	keystoneness
+9	Parabacteroides.goldsteinii	584136.3015
+7	Lachnospiraceae.NK4A136.group	103837.2402
+2	Muribaculaceae	63417.78087
+3	Bacteroides.acidifaciens	54467.17131
+6	Bacteroides	36368.55125
+10	Lachnospiraceae	12621.79662
+5	Parasutterella	11180.30187
+8	Alloprevotella	9109.418752
+4	Akkermansia.muciniphila	0
+1	Faecalibaculum	NA
