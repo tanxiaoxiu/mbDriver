@@ -4,61 +4,7 @@ library(glmnet)
 library(Rfast)
 library(mgcv)
 library(tidyverse)
-
-###calculate f
-f <- function(X){ 
-  Y<-c()
-  X <- as.data.frame(X)
-  fmla <- formula("X~s(t, m=2, k=5,bs = 'cr')")
-  dat <- cbind(X,t)
-  mod_nb <- gam(fmla, data = dat, family = nb(), method="REML")
-  Y <- fitted.values(mod_nb)
-  return(Y)
-} 
-
-###calculate f deriv
-f_deriv <- function(X){
-  Y<-c()
-  X <- as.data.frame(X)
-  fmla <- formula("X~s(t, m=2, k=5,bs = 'cr')")
-  dat <- cbind(X,t)
-  mod_nb <- gam(fmla, data = dat, family = nb(), method="REML")
-  fitted.values <- fitted.values(mod_nb)
-  newdat <- as.data.frame(t)
-  X0 <- predict(mod_nb,newdata = newdat,type="lpmatrix")
-  eps <- 1e-7 
-  t <- t + eps 
-  newdat <- as.data.frame(t)
-  X1 <- predict(mod_nb,newdata = newdat,type="lpmatrix")
-  Xp <- (X1-X0)/eps
-  df <- Xp %*% coef(mod_nb)
-  Y <- fitted.values * df
-  return(Y)
-}
-
-###calculate D3 Score
-Driver_Score <- function(A,r){
-  x_star <- -solve(A) %*% r
-  p <- length(r)
-  D_square <- as.data.frame(matrix(nrow=p,ncol=1))
-  for (i in 1:p){
-    Ai <- A
-    Ai[-i,i] <- 0
-    ri <- r
-    z_star <- -solve(Ai) %*% ri
-    di <- x_star - z_star
-    D_square[i,] <- sum(as.numeric(di*di))
-  }
-  rownames(D_square) <- row.names(A)
-  D_square <- cbind(rownames(D_square),D_square)
-  D_square_sort <-D_square[order(-D_square[,2]),]
-  return(D_square_sort)
-}
-
-### write rownames of data
-adjustdata <- function(data) {
-  data<-cbind(rownames(data),data)
-}
+library(mbDriver)
 
 setwd("~/mbDriver/real_data/Fiber_diet")
 
@@ -89,8 +35,8 @@ for (i in c("BI1","BI2","BI3","BI4","BI5")){
   otu_table <- subject_n_top[order(subject_n_top[,"Time"]),]
   t <- otu_table[,1]
   n <- nrow(otu_table)
-  s_f <- apply(otu_table[,-1],2,f)
-  s_f_deriv <- apply(otu_table[,-1],2,f_deriv)
+  s_f <- apply(otu_table[,-1],2,function(col) f(col, t))
+  s_f_deriv <- apply(otu_table[,-1],2,function(col) f_deriv(col, t))
   F_d <- rbind(F_d,s_f)
   F_dt <- rbind(F_dt,s_f_deriv)
   otu_cor <- rbind(otu_cor,otu_table)
@@ -111,8 +57,8 @@ for (i in c("SI1","SI2","SI3","SI4","SI5")){
   otu_table <- subject_n_top[order(subject_n_top[,"Time"]),] 
   t <- otu_table[,1]
   n <- nrow(otu_table)
-  s_f <- apply(otu_table[,-1],2,f)
-  s_f_deriv <- apply(otu_table[,-1],2,f_deriv)
+  s_f <- apply(otu_table[,-1],2,function(col) f(col, t))
+  s_f_deriv <- apply(otu_table[,-1],2,function(col) f_deriv(col, t))
   F_d <- rbind(F_d,s_f)
   F_dt <- rbind(F_dt,s_f_deriv)
   otu_cor <- rbind(otu_cor,otu_table)
@@ -133,8 +79,8 @@ for (i in c("HI1","HI2","HI4","HI5")){
   otu_table <- subject_n_top[order(subject_n_top[,"Time"]),] 
   t <- otu_table[,1]
   n <- nrow(otu_table)
-  s_f <- apply(otu_table[,-1],2,f)
-  s_f_deriv <- apply(otu_table[,-1],2,f_deriv)
+  s_f <- apply(otu_table[,-1],2,function(col) f(col, t))
+  s_f_deriv <- apply(otu_table[,-1],2,function(col) f_deriv(col, t))
   F_d <- rbind(F_d,s_f)
   F_dt <- rbind(F_dt,s_f_deriv)
   otu_cor <- rbind(otu_cor,otu_table)
@@ -155,8 +101,8 @@ for (i in c("GI1","GI2","GI3","GI4")){
   otu_table <- subject_n_top[order(subject_n_top[,"Time"]),] 
   t <- otu_table[,1]
   n <- nrow(otu_table)
-  s_f <- apply(otu_table[,-1],2,f)
-  s_f_deriv <- apply(otu_table[,-1],2,f_deriv)
+  s_f <- apply(otu_table[,-1],2,function(col) f(col, t))
+  s_f_deriv <- apply(otu_table[,-1],2,function(col) f_deriv(col, t))
   F_d <- rbind(F_d,s_f)
   F_dt <- rbind(F_dt,s_f_deriv)
   otu_cor <- rbind(otu_cor,otu_table)
@@ -223,8 +169,8 @@ for (i in c("BR1","BR2","BR3","BR4")){
   otu_table <- subject_n_top[order(subject_n_top[,"Time"]),] 
   t <- otu_table[,1]
   n <- nrow(otu_table)
-  s_f <- apply(otu_table[,-1],2,f)
-  s_f_deriv <- apply(otu_table[,-1],2,f_deriv)
+  s_f <- apply(otu_table[,-1],2,function(col) f(col, t))
+  s_f_deriv <- apply(otu_table[,-1],2,function(col) f_deriv(col, t))
   F_d <- rbind(F_d,s_f)
   F_dt <- rbind(F_dt,s_f_deriv)
   otu_cor <- rbind(otu_cor,otu_table)
@@ -245,8 +191,8 @@ for (i in c("SR1","SR2","SR3","SR4","SR5")){
   otu_table <- subject_n_top[order(subject_n_top[,"Time"]),] 
   t <- otu_table[,1]
   n <- nrow(otu_table)
-  s_f <- apply(otu_table[,-1],2,f)
-  s_f_deriv <- apply(otu_table[,-1],2,f_deriv)
+  s_f <- apply(otu_table[, -1], 2, function(col) f(col, t))
+  s_f_deriv <- apply(otu_table[, -1], 2, function(col) f_deriv(col, t))
   F_d <- rbind(F_d,s_f)
   F_dt <- rbind(F_dt,s_f_deriv)
   otu_cor <- rbind(otu_cor,otu_table)
@@ -267,8 +213,8 @@ for (i in c("HR1","HR2","HR3","HR4","HR5")){
   otu_table <- subject_n_top[order(subject_n_top[,"Time"]),] 
   t <- otu_table[,1]
   n <- nrow(otu_table)
-  s_f <- apply(otu_table[,-1],2,f)
-  s_f_deriv <- apply(otu_table[,-1],2,f_deriv)
+  s_f <- apply(otu_table[, -1], 2, function(col) f(col, t))
+  s_f_deriv <- apply(otu_table[, -1], 2, function(col) f_deriv(col, t))
   F_d <- rbind(F_d,s_f)
   F_dt <- rbind(F_dt,s_f_deriv)
   otu_cor <- rbind(otu_cor,otu_table)
@@ -289,8 +235,8 @@ for (i in c("GR1","GR2","GR3","GR4","GR5")){
   otu_table <- subject_n_top[order(subject_n_top[,"Time"]),] 
   t <- otu_table[,1]
   n <- nrow(otu_table)
-  s_f <- apply(otu_table[,-1],2,f)
-  s_f_deriv <- apply(otu_table[,-1],2,f_deriv)
+  s_f <- apply(otu_table[, -1], 2, function(col) f(col, t))
+  s_f_deriv <- apply(otu_table[, -1], 2, function(col) f_deriv(col, t))
   F_d <- rbind(F_d,s_f)
   F_dt <- rbind(F_dt,s_f_deriv)
   otu_cor <- rbind(otu_cor,otu_table)
@@ -358,8 +304,8 @@ for (i in c("BC1","BC2","BC3","BC4","BC5")){
   otu_table <- subject_n_top[order(subject_n_top[,"Time"]),]
   t <- otu_table[,1]
   n <- nrow(otu_table)
-  s_f <- apply(otu_table[,-1],2,f)
-  s_f_deriv <- apply(otu_table[,-1],2,f_deriv)
+  s_f <- apply(otu_table[, -1], 2, function(col) f(col, t))
+  s_f_deriv <- apply(otu_table[, -1], 2, function(col) f_deriv(col, t))
   F_d <- rbind(F_d,s_f)
   F_dt <- rbind(F_dt,s_f_deriv)
   otu_cor <- rbind(otu_cor,otu_table)
@@ -379,8 +325,8 @@ for (i in c("SC1","SC2","SC3","SC4","SC5")){
   subject_n_top <- subject_n[,c(1:(p+1))]
   otu_table <- subject_n_top[order(subject_n_top[,"Time"]),]
   n <- nrow(otu_table)
-  s_f <- apply(otu_table[,-1],2,f)
-  s_f_deriv <- apply(otu_table[,-1],2,f_deriv)
+  s_f <- apply(otu_table[, -1], 2, function(col) f(col, t))
+  s_f_deriv <- apply(otu_table[, -1], 2, function(col) f_deriv(col, t))
   F_d <- rbind(F_d,s_f)
   F_dt <- rbind(F_dt,s_f_deriv)
   otu_cor <- rbind(otu_cor,otu_table)
@@ -401,8 +347,8 @@ for (i in c("HC1","HC2","HC3","HC4","HC5")){
   otu_table <- subject_n_top[order(subject_n_top[,"Time"]),] 
   t <- otu_table[,1]
   n <- nrow(otu_table)
-  s_f <- apply(otu_table[,-1],2,f)
-  s_f_deriv <- apply(otu_table[,-1],2,f_deriv)
+  s_f <- apply(otu_table[, -1], 2, function(col) f(col, t))
+  s_f_deriv <- apply(otu_table[, -1], 2, function(col) f_deriv(col, t))
   F_d <- rbind(F_d,s_f)
   F_dt <- rbind(F_dt,s_f_deriv)
   otu_cor <- rbind(otu_cor,otu_table)
@@ -423,8 +369,8 @@ for (i in c("GC1","GC2","GC3","GC4","GC5")){
   otu_table <- subject_n_top[order(subject_n_top[,"Time"]),] 
   t <- otu_table[,1]
   n <- nrow(otu_table)
-  s_f <- apply(otu_table[,-1],2,f)
-  s_f_deriv <- apply(otu_table[,-1],2,f_deriv)
+  s_f <- apply(otu_table[, -1], 2, function(col) f(col, t))
+  s_f_deriv <- apply(otu_table[, -1], 2, function(col) f_deriv(col, t))
   F_d <- rbind(F_d,s_f)
   F_dt <- rbind(F_dt,s_f_deriv)
   otu_cor <- rbind(otu_cor,otu_table)
