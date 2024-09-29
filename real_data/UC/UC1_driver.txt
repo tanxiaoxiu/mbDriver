@@ -1,6 +1,0 @@
-Driver	Score	Group
-Lachnospiraceae	1.4407445804434e+25	UC1
-Ruminococcaceae	7.90614570580412e+23	UC1
-Porphyromonadaceae	6.75447840906294e+23	UC1
-Desulfovibrionaceae	5.73902730694436e+23	UC1
-Bacteroidaceae	5.28698621542543e+23	UC1

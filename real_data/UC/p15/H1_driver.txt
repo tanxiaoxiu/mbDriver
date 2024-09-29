@@ -1,0 +1,9 @@
+Driver	Score	Group
+Barnesiellaceae	21732855813468540928	H1
+Erysipelatoclostridiaceae	242879991558076448	H1
+Bacteroidaceae	201591880815278016	H1
+Enterobacteriaceae	187319168398936896	H1
+Prevotellaceae	156889405185362144	H1
+Sutterellaceae	127525232979535232	H1
+Akkermansiaceae	93454356555240224	H1
+Erysipelotrichaceae	84846393942724208	H1

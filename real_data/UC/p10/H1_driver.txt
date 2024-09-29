@@ -1,0 +1,6 @@
+Driver	Score	Group
+Desulfovibrionaceae	238856169323450272	H1
+Bacteroidaceae	228213292154920928	H1
+Porphyromonadaceae	158719827033500704	H1
+Enterobacteriaceae	4126144162394169	H1
+Acidaminococcaceae	2392495211759610	H1

@@ -1,0 +1,9 @@
+Driver	Score	Group
+Bacteroidaceae	6.00271727597581e+21	H2
+Prevotellaceae	4075351982769534976	H2
+Akkermansiaceae	978848500277048448	H2
+Desulfovibrionaceae	365832592332636992	H2
+Acidaminococcaceae	362752506585838976	H2
+Clostridiales_Incertae_Sedis_XIII	311082750383986816	H2
+Rikenellaceae	309213382374624320	H2
+Lachnospiraceae	269582036150951232	H2

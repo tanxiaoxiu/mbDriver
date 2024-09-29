@@ -4,6 +4,7 @@ library(glmnet)
 library(Rfast)
 library(mgcv)
 library(tidyverse)
+library(dplyr)
 library(mbDriver)
 
 setwd("~/mbDriver/real_data/Fiber_diet")
@@ -18,6 +19,13 @@ data_abundance_sort <- data_abundance[,order(-as.numeric(data_abundance["Total",
 data_fiber_diet <- merge(metadata,data_abundance_sort,by = 'row.names', all = F)
 #write.table(data_fiber_diet,file = "data_fiber.txt",row.names = F,col.names = T, sep = "\t",quote = F)
 
+threshold <- 0.8 * nrow(data_fiber_diet)
+filtered_data <- data_fiber_diet %>%
+  dplyr::select(Row.names, 6:ncol(data_fiber_diet)) %>%
+  select_if(~sum(. != 0) > threshold)
+filtered_data <- bind_cols(data_fiber_diet %>% dplyr::select(1:5), filtered_data)
+
+data_fiber_diet <- filtered_data[,-6]
 
 p = 10
 

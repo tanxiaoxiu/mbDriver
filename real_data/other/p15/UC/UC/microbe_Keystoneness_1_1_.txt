@@ -1,0 +1,16 @@
+StateID	microbe	keystoneness
+16	Clostridiales_Incertae_Sedis_XIII	1410338.08540563
+6	Porphyromonadaceae	71343.3814354765
+4	Lachnospiraceae	64812.2998190538
+7	Prevotellaceae	48766.6126828066
+9	Ruminococcaceae	47234.9541526588
+14	Barnesiellaceae	47101.0132967402
+8	Acidaminococcaceae	47101.0129754678
+11	Desulfovibrionaceae	28422.750724393
+5	Sutterellaceae	13731.8801820193
+2	Bacteroidaceae	0
+3	Akkermansiaceae	0
+10	Enterobacteriaceae	0
+12	Erysipelotrichaceae	0
+13	Rikenellaceae	0
+15	Erysipelatoclostridiaceae	0

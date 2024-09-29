@@ -1,0 +1,16 @@
+Driver	Score	Group
+Bacteroides-acidifaciens	3579648929868234240	Con
+Bacteroides	274536616224514272	Con
+Akkermansia-muciniphila	53045798229013184	Con
+Alloprevotella	33281481449857084	Con
+Parasutterella	22395634749567312	Con
+Bacteroides-acidifaciens	7580990855419753472	Rs
+Parabacteroides-goldsteinii	6588375058199089152	Rs
+Parasutterella	4595053516214777344	Rs
+Faecalibaculum	1732457667675521280	Rs
+Lachnospiraceae	798106335444044416	Rs
+Akkermansia-muciniphila	1.25243214100981e+21	In
+Muribaculaceae	5116018718046483456	In
+Faecalibaculum	1837739958472704256	In
+Bacteroides-acidifaciens	1790750693948798464	In
+Alloprevotella	1774832404413629440	In

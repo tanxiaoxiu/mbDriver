@@ -1,0 +1,9 @@
+Driver	Score	Group
+Akkermansiaceae	1.42146270931231e+24	UC1
+Desulfovibrionaceae	1.40831565716092e+24	UC1
+Erysipelatoclostridiaceae	1.18318400050579e+24	UC1
+Lachnospiraceae	3.25296856931369e+23	UC1
+Prevotellaceae	1.86149741722041e+23	UC1
+Sutterellaceae	1.53048525849223e+23	UC1
+Erysipelotrichaceae	1.08980217578992e+23	UC1
+Ruminococcaceae	8.24140669468915e+22	UC1

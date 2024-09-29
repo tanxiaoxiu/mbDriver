@@ -1,6 +1,0 @@
-Driver	Score	Group
-Acidaminococcaceae	489629166880002304	UC2
-Akkermansiaceae	308724176654426240	UC2
-Prevotellaceae	258778077308628576	UC2
-Enterobacteriaceae	242139172788397216	UC2
-Lachnospiraceae	102616980402416176	UC2

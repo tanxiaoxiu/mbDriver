@@ -1,0 +1,16 @@
+Driver	keystoneness	Group
+Parabacteroides.goldsteinii	584136.3015	Con
+Lachnospiraceae.NK4A136.group	103837.2402	Con
+Muribaculaceae	63417.78087	Con
+Bacteroides.acidifaciens	54467.17131	Con
+Bacteroides	36368.55125	Con
+Lachnospiraceae	48293.54512	Rs
+Bacteroides.acidifaciens	39054.1291	Rs
+Lachnospiraceae.NK4A136.group	18480.6166	Rs
+NA	NA	Rs
+NA	NA	Rs
+Muribaculaceae	33588471.66	In
+Alloprevotella	1297082.952	In
+Bacteroides.acidifaciens	385766.6813	In
+Parabacteroides.goldsteinii	91572.44591	In
+Bacteroides	62250.22643	In

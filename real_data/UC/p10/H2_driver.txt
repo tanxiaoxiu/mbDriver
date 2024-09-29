@@ -1,0 +1,6 @@
+Driver	Score	Group
+Acidaminococcaceae	10823685256349573120	H2
+Akkermansiaceae	2508015441077623296	H2
+Ruminococcaceae	583584297834182528	H2
+Lachnospiraceae	26118731618283808	H2
+Porphyromonadaceae	25815453551503328	H2

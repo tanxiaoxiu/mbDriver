@@ -1,0 +1,11 @@
+rownames(D_square)	V1
+Acidaminococcaceae	489568459897032576
+Akkermansiaceae	308718891410312896
+Prevotellaceae	258795999653510144
+Enterobacteriaceae	242101384054297056
+Lachnospiraceae	102610805566150736
+Sutterellaceae	61563840333768752
+Desulfovibrionaceae	13854314632251130
+Ruminococcaceae	11134517649985344
+Porphyromonadaceae	8984521334489252
+Bacteroidaceae	649573458583047

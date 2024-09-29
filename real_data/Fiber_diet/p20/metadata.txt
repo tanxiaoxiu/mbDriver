@@ -1,0 +1,518 @@
+SampleID	Subject	Vendor	Time	Group
+sample131	BC1	Beijing	0	Control
+sample132	BC2	Beijing	0	Control
+sample133	BC3	Beijing	0	Control
+sample134	BC4	Beijing	0	Control
+sample135	BC5	Beijing	0	Control
+sample136	BR1	Beijing	0	Resistant starch
+sample137	BR2	Beijing	0	Resistant starch
+sample138	BR3	Beijing	0	Resistant starch
+sample139	BR4	Beijing	0	Resistant starch
+sample140	BR5	Beijing	0	Resistant starch
+sample141	BI1	Beijing	0	Inulin
+sample142	BI2	Beijing	0	Inulin
+sample143	BI3	Beijing	0	Inulin
+sample144	BI4	Beijing	0	Inulin
+sample145	BI5	Beijing	0	Inulin
+sample146	BC1	Beijing	1	Control
+sample147	BC2	Beijing	1	Control
+sample148	BC3	Beijing	1	Control
+sample149	BC4	Beijing	1	Control
+sample150	BC5	Beijing	1	Control
+sample151	BR1	Beijing	1	Resistant starch
+sample152	BR2	Beijing	1	Resistant starch
+sample153	BR3	Beijing	1	Resistant starch
+sample154	BR4	Beijing	1	Resistant starch
+sample155	BR5	Beijing	1	Resistant starch
+sample156	BI1	Beijing	1	Inulin
+sample157	BI2	Beijing	1	Inulin
+sample158	BI3	Beijing	1	Inulin
+sample159	BI4	Beijing	1	Inulin
+sample160	BI5	Beijing	1	Inulin
+sample161	BC1	Beijing	3	Control
+sample162	BC2	Beijing	3	Control
+sample163	BC3	Beijing	3	Control
+sample164	BC4	Beijing	3	Control
+sample165	BC5	Beijing	3	Control
+sample166	BR1	Beijing	3	Resistant starch
+sample167	BR2	Beijing	3	Resistant starch
+sample168	BR3	Beijing	3	Resistant starch
+sample169	BR4	Beijing	3	Resistant starch
+sample170	BR5	Beijing	3	Resistant starch
+sample171	BI1	Beijing	3	Inulin
+sample172	BI2	Beijing	3	Inulin
+sample173	BI3	Beijing	3	Inulin
+sample174	BI4	Beijing	3	Inulin
+sample175	BI5	Beijing	3	Inulin
+sample176	BC1	Beijing	5	Control
+sample177	BC2	Beijing	5	Control
+sample178	BC3	Beijing	5	Control
+sample179	BC4	Beijing	5	Control
+sample180	BC5	Beijing	5	Control
+sample181	BR1	Beijing	5	Resistant starch
+sample182	BR2	Beijing	5	Resistant starch
+sample183	BR3	Beijing	5	Resistant starch
+sample184	BR4	Beijing	5	Resistant starch
+sample185	BR5	Beijing	5	Resistant starch
+sample186	BI1	Beijing	5	Inulin
+sample187	BI2	Beijing	5	Inulin
+sample188	BI3	Beijing	5	Inulin
+sample189	BI4	Beijing	5	Inulin
+sample190	BI5	Beijing	5	Inulin
+sample191	BC1	Beijing	8	Control
+sample192	BC2	Beijing	8	Control
+sample193	BC3	Beijing	8	Control
+sample194	BC4	Beijing	8	Control
+sample195	BC5	Beijing	8	Control
+sample196	BR1	Beijing	8	Resistant starch
+sample197	BR2	Beijing	8	Resistant starch
+sample198	BR3	Beijing	8	Resistant starch
+sample199	BR4	Beijing	8	Resistant starch
+sample200	BR5	Beijing	8	Resistant starch
+sample201	BI1	Beijing	8	Inulin
+sample202	BI2	Beijing	8	Inulin
+sample203	BI3	Beijing	8	Inulin
+sample204	BI4	Beijing	8	Inulin
+sample205	BI5	Beijing	8	Inulin
+sample206	BC1	Beijing	13	Control
+sample207	BC2	Beijing	13	Control
+sample208	BC3	Beijing	13	Control
+sample209	BC4	Beijing	13	Control
+sample210	BC5	Beijing	13	Control
+sample211	BR1	Beijing	13	Resistant starch
+sample212	BR2	Beijing	13	Resistant starch
+sample213	BR3	Beijing	13	Resistant starch
+sample214	BR4	Beijing	13	Resistant starch
+sample215	BR5	Beijing	13	Resistant starch
+sample216	BI1	Beijing	13	Inulin
+sample217	BI2	Beijing	13	Inulin
+sample218	BI3	Beijing	13	Inulin
+sample219	BI4	Beijing	13	Inulin
+sample220	BI5	Beijing	13	Inulin
+sample221	BC1	Beijing	19	Control
+sample222	BC2	Beijing	19	Control
+sample223	BC3	Beijing	19	Control
+sample224	BC4	Beijing	19	Control
+sample225	BC5	Beijing	19	Control
+sample226	BR1	Beijing	19	Resistant starch
+sample227	BR2	Beijing	19	Resistant starch
+sample228	BR3	Beijing	19	Resistant starch
+sample229	BR4	Beijing	19	Resistant starch
+sample230	BR5	Beijing	19	Resistant starch
+sample231	BI1	Beijing	19	Inulin
+sample232	BI2	Beijing	19	Inulin
+sample233	BI3	Beijing	19	Inulin
+sample234	BI4	Beijing	19	Inulin
+sample235	BI5	Beijing	19	Inulin
+sample236	BC1	Beijing	25	Control
+sample237	BC2	Beijing	25	Control
+sample238	BC3	Beijing	25	Control
+sample239	BC4	Beijing	25	Control
+sample240	BC5	Beijing	25	Control
+sample241	BR1	Beijing	25	Resistant starch
+sample242	BR2	Beijing	25	Resistant starch
+sample243	BR3	Beijing	25	Resistant starch
+sample244	BR4	Beijing	25	Resistant starch
+sample245	BR5	Beijing	25	Resistant starch
+sample246	BI1	Beijing	25	Inulin
+sample247	BI2	Beijing	25	Inulin
+sample248	BI3	Beijing	25	Inulin
+sample249	BI4	Beijing	25	Inulin
+sample250	BI5	Beijing	25	Inulin
+sample251	BC1	Beijing	31	Control
+sample252	BC2	Beijing	31	Control
+sample253	BC3	Beijing	31	Control
+sample254	BC4	Beijing	31	Control
+sample255	BC5	Beijing	31	Control
+sample256	BR1	Beijing	31	Resistant starch
+sample257	BR2	Beijing	31	Resistant starch
+sample258	BR3	Beijing	31	Resistant starch
+sample259	BR4	Beijing	31	Resistant starch
+sample260	BR5	Beijing	31	Resistant starch
+sample261	BI1	Beijing	31	Inulin
+sample262	BI2	Beijing	31	Inulin
+sample263	BI3	Beijing	31	Inulin
+sample264	BI4	Beijing	31	Inulin
+sample265	BI5	Beijing	31	Inulin
+sample401	GC1	Guangdong	0	Control
+sample402	GC2	Guangdong	0	Control
+sample403	GC3	Guangdong	0	Control
+sample404	GC4	Guangdong	0	Control
+sample405	GC5	Guangdong	0	Control
+sample406	GR1	Guangdong	0	Resistant starch
+sample407	GR2	Guangdong	0	Resistant starch
+sample408	GR3	Guangdong	0	Resistant starch
+sample409	GR4	Guangdong	0	Resistant starch
+sample410	GR5	Guangdong	0	Resistant starch
+sample411	GI1	Guangdong	0	Inulin
+sample412	GI2	Guangdong	0	Inulin
+sample413	GI3	Guangdong	0	Inulin
+sample414	GI4	Guangdong	0	Inulin
+sample416	GC1	Guangdong	1	Control
+sample417	GC2	Guangdong	1	Control
+sample418	GC3	Guangdong	1	Control
+sample419	GC4	Guangdong	1	Control
+sample420	GC5	Guangdong	1	Control
+sample421	GR1	Guangdong	1	Resistant starch
+sample422	GR2	Guangdong	1	Resistant starch
+sample423	GR3	Guangdong	1	Resistant starch
+sample424	GR4	Guangdong	1	Resistant starch
+sample425	GR5	Guangdong	1	Resistant starch
+sample426	GI1	Guangdong	1	Inulin
+sample427	GI2	Guangdong	1	Inulin
+sample428	GI3	Guangdong	1	Inulin
+sample429	GI4	Guangdong	1	Inulin
+sample431	GC1	Guangdong	3	Control
+sample432	GC2	Guangdong	3	Control
+sample433	GC3	Guangdong	3	Control
+sample434	GC4	Guangdong	3	Control
+sample435	GC5	Guangdong	3	Control
+sample436	GR1	Guangdong	3	Resistant starch
+sample437	GR2	Guangdong	3	Resistant starch
+sample438	GR3	Guangdong	3	Resistant starch
+sample439	GR4	Guangdong	3	Resistant starch
+sample440	GR5	Guangdong	3	Resistant starch
+sample441	GI1	Guangdong	3	Inulin
+sample442	GI2	Guangdong	3	Inulin
+sample443	GI3	Guangdong	3	Inulin
+sample444	GI4	Guangdong	3	Inulin
+sample446	GC1	Guangdong	5	Control
+sample447	GC2	Guangdong	5	Control
+sample448	GC3	Guangdong	5	Control
+sample449	GC4	Guangdong	5	Control
+sample450	GC5	Guangdong	5	Control
+sample451	GR1	Guangdong	5	Resistant starch
+sample452	GR2	Guangdong	5	Resistant starch
+sample453	GR3	Guangdong	5	Resistant starch
+sample454	GR4	Guangdong	5	Resistant starch
+sample455	GR5	Guangdong	5	Resistant starch
+sample456	GI1	Guangdong	5	Inulin
+sample457	GI2	Guangdong	5	Inulin
+sample458	GI3	Guangdong	5	Inulin
+sample459	GI4	Guangdong	5	Inulin
+sample461	GC1	Guangdong	8	Control
+sample462	GC2	Guangdong	8	Control
+sample463	GC3	Guangdong	8	Control
+sample464	GC4	Guangdong	8	Control
+sample465	GC5	Guangdong	8	Control
+sample466	GR1	Guangdong	8	Resistant starch
+sample467	GR2	Guangdong	8	Resistant starch
+sample468	GR3	Guangdong	8	Resistant starch
+sample469	GR4	Guangdong	8	Resistant starch
+sample470	GR5	Guangdong	8	Resistant starch
+sample471	GI1	Guangdong	8	Inulin
+sample472	GI2	Guangdong	8	Inulin
+sample473	GI3	Guangdong	8	Inulin
+sample474	GI4	Guangdong	8	Inulin
+sample476	GC1	Guangdong	13	Control
+sample477	GC2	Guangdong	13	Control
+sample478	GC3	Guangdong	13	Control
+sample479	GC4	Guangdong	13	Control
+sample480	GC5	Guangdong	13	Control
+sample481	GR1	Guangdong	13	Resistant starch
+sample482	GR2	Guangdong	13	Resistant starch
+sample483	GR3	Guangdong	13	Resistant starch
+sample484	GR4	Guangdong	13	Resistant starch
+sample485	GR5	Guangdong	13	Resistant starch
+sample486	GI1	Guangdong	13	Inulin
+sample487	GI2	Guangdong	13	Inulin
+sample488	GI3	Guangdong	13	Inulin
+sample489	GI4	Guangdong	13	Inulin
+sample491	GC1	Guangdong	19	Control
+sample492	GC2	Guangdong	19	Control
+sample493	GC3	Guangdong	19	Control
+sample494	GC4	Guangdong	19	Control
+sample495	GC5	Guangdong	19	Control
+sample496	GR1	Guangdong	19	Resistant starch
+sample497	GR2	Guangdong	19	Resistant starch
+sample498	GR3	Guangdong	19	Resistant starch
+sample499	GR4	Guangdong	19	Resistant starch
+sample500	GR5	Guangdong	19	Resistant starch
+sample501	GI1	Guangdong	19	Inulin
+sample502	GI2	Guangdong	19	Inulin
+sample503	GI3	Guangdong	19	Inulin
+sample504	GI4	Guangdong	19	Inulin
+sample506	GC1	Guangdong	25	Control
+sample507	GC2	Guangdong	25	Control
+sample508	GC3	Guangdong	25	Control
+sample509	GC4	Guangdong	25	Control
+sample510	GC5	Guangdong	25	Control
+sample511	GR1	Guangdong	25	Resistant starch
+sample512	GR2	Guangdong	25	Resistant starch
+sample513	GR3	Guangdong	25	Resistant starch
+sample514	GR4	Guangdong	25	Resistant starch
+sample515	GR5	Guangdong	25	Resistant starch
+sample516	GI1	Guangdong	25	Inulin
+sample517	GI2	Guangdong	25	Inulin
+sample518	GI3	Guangdong	25	Inulin
+sample519	GI4	Guangdong	25	Inulin
+sample521	GC1	Guangdong	31	Control
+sample522	GC2	Guangdong	31	Control
+sample523	GC3	Guangdong	31	Control
+sample524	GC4	Guangdong	31	Control
+sample525	GC5	Guangdong	31	Control
+sample526	GR1	Guangdong	31	Resistant starch
+sample527	GR2	Guangdong	31	Resistant starch
+sample528	GR3	Guangdong	31	Resistant starch
+sample529	GR4	Guangdong	31	Resistant starch
+sample530	GR5	Guangdong	31	Resistant starch
+sample531	GI1	Guangdong	31	Inulin
+sample532	GI2	Guangdong	31	Inulin
+sample533	GI3	Guangdong	31	Inulin
+sample534	GI4	Guangdong	31	Inulin
+sample266	HC1	Hunan	0	Control
+sample267	HC2	Hunan	0	Control
+sample268	HC3	Hunan	0	Control
+sample269	HC4	Hunan	0	Control
+sample270	HC5	Hunan	0	Control
+sample271	HR1	Hunan	0	Resistant starch
+sample272	HR2	Hunan	0	Resistant starch
+sample273	HR3	Hunan	0	Resistant starch
+sample274	HR4	Hunan	0	Resistant starch
+sample275	HR5	Hunan	0	Resistant starch
+sample276	HI1	Hunan	0	Inulin
+sample277	HI2	Hunan	0	Inulin
+sample279	HI4	Hunan	0	Inulin
+sample280	HI5	Hunan	0	Inulin
+sample281	HC1	Hunan	1	Control
+sample282	HC2	Hunan	1	Control
+sample283	HC3	Hunan	1	Control
+sample284	HC4	Hunan	1	Control
+sample285	HC5	Hunan	1	Control
+sample286	HR1	Hunan	1	Resistant starch
+sample287	HR2	Hunan	1	Resistant starch
+sample288	HR3	Hunan	1	Resistant starch
+sample289	HR4	Hunan	1	Resistant starch
+sample290	HR5	Hunan	1	Resistant starch
+sample291	HI1	Hunan	1	Inulin
+sample292	HI2	Hunan	1	Inulin
+sample294	HI4	Hunan	1	Inulin
+sample295	HI5	Hunan	1	Inulin
+sample296	HC1	Hunan	3	Control
+sample297	HC2	Hunan	3	Control
+sample298	HC3	Hunan	3	Control
+sample299	HC4	Hunan	3	Control
+sample300	HC5	Hunan	3	Control
+sample301	HR1	Hunan	3	Resistant starch
+sample302	HR2	Hunan	3	Resistant starch
+sample303	HR3	Hunan	3	Resistant starch
+sample304	HR4	Hunan	3	Resistant starch
+sample305	HR5	Hunan	3	Resistant starch
+sample306	HI1	Hunan	3	Inulin
+sample307	HI2	Hunan	3	Inulin
+sample309	HI4	Hunan	3	Inulin
+sample310	HI5	Hunan	3	Inulin
+sample311	HC1	Hunan	5	Control
+sample312	HC2	Hunan	5	Control
+sample313	HC3	Hunan	5	Control
+sample314	HC4	Hunan	5	Control
+sample315	HC5	Hunan	5	Control
+sample316	HR1	Hunan	5	Resistant starch
+sample317	HR2	Hunan	5	Resistant starch
+sample318	HR3	Hunan	5	Resistant starch
+sample319	HR4	Hunan	5	Resistant starch
+sample320	HR5	Hunan	5	Resistant starch
+sample321	HI1	Hunan	5	Inulin
+sample322	HI2	Hunan	5	Inulin
+sample324	HI4	Hunan	5	Inulin
+sample325	HI5	Hunan	5	Inulin
+sample326	HC1	Hunan	8	Control
+sample327	HC2	Hunan	8	Control
+sample328	HC3	Hunan	8	Control
+sample329	HC4	Hunan	8	Control
+sample330	HC5	Hunan	8	Control
+sample331	HR1	Hunan	8	Resistant starch
+sample332	HR2	Hunan	8	Resistant starch
+sample333	HR3	Hunan	8	Resistant starch
+sample334	HR4	Hunan	8	Resistant starch
+sample335	HR5	Hunan	8	Resistant starch
+sample336	HI1	Hunan	8	Inulin
+sample337	HI2	Hunan	8	Inulin
+sample339	HI4	Hunan	8	Inulin
+sample340	HI5	Hunan	8	Inulin
+sample341	HC1	Hunan	13	Control
+sample342	HC2	Hunan	13	Control
+sample343	HC3	Hunan	13	Control
+sample344	HC4	Hunan	13	Control
+sample345	HC5	Hunan	13	Control
+sample346	HR1	Hunan	13	Resistant starch
+sample347	HR2	Hunan	13	Resistant starch
+sample348	HR3	Hunan	13	Resistant starch
+sample349	HR4	Hunan	13	Resistant starch
+sample350	HR5	Hunan	13	Resistant starch
+sample351	HI1	Hunan	13	Inulin
+sample352	HI2	Hunan	13	Inulin
+sample354	HI4	Hunan	13	Inulin
+sample355	HI5	Hunan	13	Inulin
+sample356	HC1	Hunan	19	Control
+sample357	HC2	Hunan	19	Control
+sample358	HC3	Hunan	19	Control
+sample359	HC4	Hunan	19	Control
+sample360	HC5	Hunan	19	Control
+sample361	HR1	Hunan	19	Resistant starch
+sample362	HR2	Hunan	19	Resistant starch
+sample363	HR3	Hunan	19	Resistant starch
+sample364	HR4	Hunan	19	Resistant starch
+sample365	HR5	Hunan	19	Resistant starch
+sample366	HI1	Hunan	19	Inulin
+sample367	HI2	Hunan	19	Inulin
+sample369	HI4	Hunan	19	Inulin
+sample370	HI5	Hunan	19	Inulin
+sample371	HC1	Hunan	25	Control
+sample372	HC2	Hunan	25	Control
+sample373	HC3	Hunan	25	Control
+sample374	HC4	Hunan	25	Control
+sample375	HC5	Hunan	25	Control
+sample376	HR1	Hunan	25	Resistant starch
+sample377	HR2	Hunan	25	Resistant starch
+sample378	HR3	Hunan	25	Resistant starch
+sample379	HR4	Hunan	25	Resistant starch
+sample380	HR5	Hunan	25	Resistant starch
+sample381	HI1	Hunan	25	Inulin
+sample382	HI2	Hunan	25	Inulin
+sample384	HI4	Hunan	25	Inulin
+sample385	HI5	Hunan	25	Inulin
+sample386	HC1	Hunan	31	Control
+sample387	HC2	Hunan	31	Control
+sample388	HC3	Hunan	31	Control
+sample389	HC4	Hunan	31	Control
+sample390	HC5	Hunan	31	Control
+sample391	HR1	Hunan	31	Resistant starch
+sample392	HR2	Hunan	31	Resistant starch
+sample393	HR3	Hunan	31	Resistant starch
+sample394	HR4	Hunan	31	Resistant starch
+sample395	HR5	Hunan	31	Resistant starch
+sample396	HI1	Hunan	31	Inulin
+sample397	HI2	Hunan	31	Inulin
+sample399	HI4	Hunan	31	Inulin
+sample400	HI5	Hunan	31	Inulin
+sample1	SC1	Shanghai	0	Control
+sample2	SC2	Shanghai	0	Control
+sample3	SC3	Shanghai	0	Control
+sample4	SC4	Shanghai	0	Control
+sample5	SC5	Shanghai	0	Control
+sample6	SR1	Shanghai	0	Resistant starch
+sample7	SR2	Shanghai	0	Resistant starch
+sample8	SR3	Shanghai	0	Resistant starch
+sample9	SR4	Shanghai	0	Resistant starch
+sample10	SR5	Shanghai	0	Resistant starch
+sample11	SC1	Shanghai	1	Control
+sample12	SC2	Shanghai	1	Control
+sample13	SC3	Shanghai	1	Control
+sample14	SC4	Shanghai	1	Control
+sample15	SC5	Shanghai	1	Control
+sample16	SR1	Shanghai	1	Resistant starch
+sample17	SR2	Shanghai	1	Resistant starch
+sample18	SR3	Shanghai	1	Resistant starch
+sample19	SR4	Shanghai	1	Resistant starch
+sample20	SR5	Shanghai	1	Resistant starch
+sample21	SC1	Shanghai	3	Control
+sample22	SC2	Shanghai	3	Control
+sample23	SC3	Shanghai	3	Control
+sample24	SC4	Shanghai	3	Control
+sample25	SC5	Shanghai	3	Control
+sample26	SR1	Shanghai	3	Resistant starch
+sample27	SR2	Shanghai	3	Resistant starch
+sample28	SR3	Shanghai	3	Resistant starch
+sample29	SR4	Shanghai	3	Resistant starch
+sample30	SR5	Shanghai	3	Resistant starch
+sample31	SI1	Shanghai	0	Inulin
+sample32	SI2	Shanghai	0	Inulin
+sample33	SI3	Shanghai	0	Inulin
+sample34	SI4	Shanghai	0	Inulin
+sample35	SI5	Shanghai	0	Inulin
+sample36	SC1	Shanghai	5	Control
+sample37	SC2	Shanghai	5	Control
+sample38	SC3	Shanghai	5	Control
+sample39	SC4	Shanghai	5	Control
+sample40	SC5	Shanghai	5	Control
+sample41	SR1	Shanghai	5	Resistant starch
+sample42	SR2	Shanghai	5	Resistant starch
+sample43	SR3	Shanghai	5	Resistant starch
+sample44	SR4	Shanghai	5	Resistant starch
+sample45	SR5	Shanghai	5	Resistant starch
+sample46	SI1	Shanghai	2	Inulin
+sample47	SI2	Shanghai	2	Inulin
+sample48	SI3	Shanghai	2	Inulin
+sample49	SI4	Shanghai	2	Inulin
+sample50	SI5	Shanghai	2	Inulin
+sample51	SC1	Shanghai	8	Control
+sample52	SC2	Shanghai	8	Control
+sample53	SC3	Shanghai	8	Control
+sample54	SC4	Shanghai	8	Control
+sample55	SC5	Shanghai	8	Control
+sample56	SR1	Shanghai	8	Resistant starch
+sample57	SR2	Shanghai	8	Resistant starch
+sample58	SR3	Shanghai	8	Resistant starch
+sample59	SR4	Shanghai	8	Resistant starch
+sample60	SR5	Shanghai	8	Resistant starch
+sample61	SI1	Shanghai	5	Inulin
+sample62	SI2	Shanghai	5	Inulin
+sample63	SI3	Shanghai	5	Inulin
+sample64	SI4	Shanghai	5	Inulin
+sample65	SI5	Shanghai	5	Inulin
+sample66	SC1	Shanghai	13	Control
+sample67	SC2	Shanghai	13	Control
+sample68	SC3	Shanghai	13	Control
+sample69	SC4	Shanghai	13	Control
+sample70	SC5	Shanghai	13	Control
+sample71	SR1	Shanghai	13	Resistant starch
+sample72	SR2	Shanghai	13	Resistant starch
+sample73	SR3	Shanghai	13	Resistant starch
+sample74	SR4	Shanghai	13	Resistant starch
+sample75	SR5	Shanghai	13	Resistant starch
+sample76	SI1	Shanghai	10	Inulin
+sample77	SI2	Shanghai	10	Inulin
+sample78	SI3	Shanghai	10	Inulin
+sample79	SI4	Shanghai	10	Inulin
+sample80	SI5	Shanghai	10	Inulin
+sample81	SI1	Shanghai	13	Inulin
+sample82	SI2	Shanghai	13	Inulin
+sample83	SI3	Shanghai	13	Inulin
+sample84	SI4	Shanghai	13	Inulin
+sample85	SI5	Shanghai	13	Inulin
+sample86	SC1	Shanghai	19	Control
+sample87	SC2	Shanghai	19	Control
+sample88	SC3	Shanghai	19	Control
+sample89	SC4	Shanghai	19	Control
+sample90	SC5	Shanghai	19	Control
+sample91	SR1	Shanghai	19	Resistant starch
+sample92	SR2	Shanghai	19	Resistant starch
+sample93	SR3	Shanghai	19	Resistant starch
+sample94	SR4	Shanghai	19	Resistant starch
+sample95	SR5	Shanghai	19	Resistant starch
+sample96	SI1	Shanghai	19	Inulin
+sample97	SI2	Shanghai	19	Inulin
+sample98	SI3	Shanghai	19	Inulin
+sample99	SI4	Shanghai	19	Inulin
+sample100	SI5	Shanghai	19	Inulin
+sample101	SC1	Shanghai	25	Control
+sample102	SC2	Shanghai	25	Control
+sample103	SC3	Shanghai	25	Control
+sample104	SC4	Shanghai	25	Control
+sample105	SC5	Shanghai	25	Control
+sample106	SR1	Shanghai	25	Resistant starch
+sample107	SR2	Shanghai	25	Resistant starch
+sample108	SR3	Shanghai	25	Resistant starch
+sample109	SR4	Shanghai	25	Resistant starch
+sample110	SR5	Shanghai	25	Resistant starch
+sample111	SI1	Shanghai	25	Inulin
+sample112	SI2	Shanghai	25	Inulin
+sample113	SI3	Shanghai	25	Inulin
+sample114	SI4	Shanghai	25	Inulin
+sample115	SI5	Shanghai	25	Inulin
+sample116	SC1	Shanghai	31	Control
+sample117	SC2	Shanghai	31	Control
+sample118	SC3	Shanghai	31	Control
+sample119	SC4	Shanghai	31	Control
+sample120	SC5	Shanghai	31	Control
+sample121	SR1	Shanghai	31	Resistant starch
+sample122	SR2	Shanghai	31	Resistant starch
+sample123	SR3	Shanghai	31	Resistant starch
+sample124	SR4	Shanghai	31	Resistant starch
+sample125	SR5	Shanghai	31	Resistant starch
+sample126	SI1	Shanghai	31	Inulin
+sample127	SI2	Shanghai	31	Inulin
+sample128	SI3	Shanghai	31	Inulin
+sample129	SI4	Shanghai	31	Inulin
+sample130	SI5	Shanghai	31	Inulin

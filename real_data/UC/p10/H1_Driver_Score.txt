@@ -1,0 +1,11 @@
+rownames(D_square)	V1
+Desulfovibrionaceae	238856169323450272
+Bacteroidaceae	228213292154920928
+Porphyromonadaceae	158719827033500704
+Enterobacteriaceae	4126144162394169
+Acidaminococcaceae	2392495211759610
+Sutterellaceae	1170718732849884
+Akkermansiaceae	587318723805906
+Lachnospiraceae	50286817557285.9
+Ruminococcaceae	5605979303020.19
+Prevotellaceae	701782613738.103

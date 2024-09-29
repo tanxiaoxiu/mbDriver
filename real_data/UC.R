@@ -1,8 +1,8 @@
 rm(list = ls(all = TRUE)) 
-library(MASS)
 library(glmnet)
 library(Rfast)
 library(mgcv)
+library(dplyr)
 library(mbDriver)
 
 
@@ -17,6 +17,13 @@ data_abundance <- rbind(abundance,Total=colSums(abundance))
 data_abundance_sort <- data_abundance[,order(-as.numeric(data_abundance["Total",]))]
 data_UC <- merge(metadata,data_abundance_sort,by = 'row.names', all = F)
 #write.table(data_UC,file = "data_UC.txt",row.names = F,col.names = T, sep = "\t",quote = F)
+threshold <- 0.5 * nrow(data_UC)
+filtered_data <- data_UC %>%
+  dplyr::select(Row.names, 5:ncol(data_UC)) %>%
+  select_if(~sum(. != 0) > threshold)
+filtered_data <- bind_cols(data_UC %>% dplyr::select(1:4), filtered_data)
+
+data_UC  <- filtered_data[,-5]
 
 p = 10 
 n1 = 5

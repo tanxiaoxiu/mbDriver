@@ -1,0 +1,16 @@
+rownames(D_square)	V1
+Barnesiellaceae	21732855813468540928
+Erysipelatoclostridiaceae	242879991558076448
+Bacteroidaceae	201591880815278016
+Enterobacteriaceae	187319168398936896
+Prevotellaceae	156889405185362144
+Sutterellaceae	127525232979535232
+Akkermansiaceae	93454356555240224
+Erysipelotrichaceae	84846393942724208
+Acidaminococcaceae	77821002575076048
+Clostridiales_Incertae_Sedis_XIII	75338848548841856
+Rikenellaceae	58959318094405256
+Ruminococcaceae	47268528669621272
+Desulfovibrionaceae	41828983442730464
+Porphyromonadaceae	29899620768897872
+Lachnospiraceae	11375959698634512
