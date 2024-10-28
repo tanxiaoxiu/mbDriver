@@ -145,6 +145,6 @@ plot3.2 <- g + geom_col(aes(fill = Method,y= RMSE_r), position = position_dodge(
 
 #ggsave(filename="RMSE_Growth_n15.png",plot=plot3.2,device="png",dpi=600,units="in",width=8,height=8)
 
-plot_FigureS4 <- plot_grid(plot1.1,plot2.1,plot3.1,plot1.2,plot2.2,plot3.2,ncol=3, nrow=2,labels = c("A","B","C","D","E","F"))
-ggsave(filename="plot_FigureS4.png",plot=plot_FigureS4,device="png",dpi=600,units="in",width=20,height=16)
+plot_FigureS5 <- plot_grid(plot1.1,plot2.1,plot3.1,plot1.2,plot2.2,plot3.2,ncol=3, nrow=2,labels = c("A","B","C","D","E","F"))
+ggsave(filename="plot_FigureS5.png",plot=plot_FigureS5,device="png",dpi=600,units="in",width=20,height=16)
 

@@ -169,5 +169,5 @@ plot4.2 <- ggplot(data_long, aes(x = Method, y = Result, fill = Method)) +
         axis.line = element_line(color="black", size=0.5)) 
 #ggsave(filename="corr_t25.png",plot=plot4.2,device="png",dpi=600,units="in",width=8,height=8)
 
-plot_FigureS5 <- plot_grid(plot1.1,plot2.1,plot3.1,plot4.1,plot1.2,plot2.2,plot3.2,plot4.2,ncol=4, nrow=2,labels = c("A","B","C","D","E","F","G","H"),label_size = 26)
-ggsave(filename="plot_FigureS5.png",plot=plot_FigureS5,device="png",dpi=600,units="in",width=30,height=14)
+plot_FigureS6 <- plot_grid(plot1.1,plot2.1,plot3.1,plot4.1,plot1.2,plot2.2,plot3.2,plot4.2,ncol=4, nrow=2,labels = c("A","B","C","D","E","F","G","H"),label_size = 26)
+ggsave(filename="plot_FigureS6.png",plot=plot_FigureS6,device="png",dpi=600,units="in",width=30,height=14)
