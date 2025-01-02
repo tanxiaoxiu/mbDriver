@@ -16,3 +16,7 @@ The Driver score index is introduced for identifying driver microbes in a microb
 library(devtools)
 devtools::install_github("tanxiaoxiu/mbDriver")
 library(mbDriver)
+```
+
+## Citation
+Tan X, Xue F, Zhang C, Wang T. mbDriver: identifying driver microbes in microbial communities based on time-series microbiome data. Brief Bioinform 2024; 25: bbae580, https://doi.org/10.1093/bib/bbae580.
